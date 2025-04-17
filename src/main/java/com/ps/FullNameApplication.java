@@ -31,15 +31,18 @@ public class FullNameApplication {
         }
 
         if(!middleName.isEmpty()){
-            fullName = firstName + " " + middleName;
+           // fullName = firstName + " " + middleName;
+            fullName = fullName +" "+ middleName;
         }
 
         if(!lastName.isEmpty()){
-            fullName = firstName + " " + middleName + " " + lastName;
+            //fullName = firstName + " " + middleName + " " + lastName;
+            fullName = fullName + " " + lastName;
         }
 
         if(!suffix.isEmpty()){
-            fullName = firstName + " " + middleName + " " + lastName + ","+ suffix;
+            //fullName = firstName + " " + middleName + " " + lastName + ","+ suffix;
+            fullName = fullName + ","+ suffix;
         }
 
         //System.out.println("You full name is: " + fullName);
